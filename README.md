@@ -8,6 +8,7 @@ The encryption and communication protocol is as follows:
 1. The client creates an RSA key and sends it to the server. 
 2. The server creates an AES key and uses the RSA key to encrypt it. 
 3. The client decrypts the encrypted AES key and uses it to encrypt its messages. 
+4. The end goal is that the client sends a small encrypted file(Up to 50 KB) to the server, that decrypts it and uses checksum method authenticate its content.
 
 The communication protocol(The client's requests and the server's responses are detailed in the the diagram that's in the pdf file in the project. 
 
